@@ -1,0 +1,15 @@
+services:
+  separador-fotos:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: separador-fotos:local
+    volumes:
+      - type: bind
+        source: ./imagenes-pendientes
+        target: /datos/entrada
+        read_only: true
+      - type: bind
+        source: ./imagenes-recortadas
+        target: /datos/salida
+    restart: "no"

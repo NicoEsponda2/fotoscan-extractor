@@ -1,0 +1,10 @@
+.git
+.gitignore
+.venv
+.pytest_cache
+__pycache__
+*.py[cod]
+tests
+requirements-dev.txt
+imagenes-pendientes
+imagenes-recortadas
